@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import org.springframework.data.annotation.AccessType;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -13,14 +12,14 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@Table
+@Table(name="hotel")
 public class Hotel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private string name;
+    private String name;
 
     private String city;
 

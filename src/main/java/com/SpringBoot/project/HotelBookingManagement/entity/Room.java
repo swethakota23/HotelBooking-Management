@@ -1,7 +1,6 @@
 package com.SpringBoot.project.HotelBookingManagement.entity;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -10,7 +9,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
+@Entity
 @Table
 @Getter
 @Setter

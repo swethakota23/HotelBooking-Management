@@ -17,7 +17,7 @@ import lombok.Setter;
 @Table(
     uniqueConstraints = @UniqueConstraint(
     name= "unique_hotel_room_date",
-    columnNames = {"hotel_id","room_id","date"}, 
+    columnNames = {"hotel_id","room_id","date"} 
     ))
 public class Inventory {
     @Id
@@ -55,7 +55,7 @@ public class Inventory {
     private String closed;
 
 
-      @CreationTimestamp
+    @CreationTimestamp
     private LocalDateTime createdAt;
 
     @UpdateTimestamp

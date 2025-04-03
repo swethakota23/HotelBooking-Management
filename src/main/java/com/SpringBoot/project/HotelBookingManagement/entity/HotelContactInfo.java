@@ -1,7 +1,7 @@
 package com.SpringBoot.project.HotelBookingManagement.entity;
 
 import jakarta.persistence.Embeddable;
-import jakarta.persistence.Entity;
+
 import lombok.Getter;
 import lombok.Setter;
 
